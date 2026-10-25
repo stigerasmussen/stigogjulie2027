@@ -291,8 +291,8 @@ body.modal-lock { overflow: hidden; }
 }
 /* mobile disco placement, taken from the Figma mobile frame (Mobil – Kærlighedsfest (402)) */
 @media (max-width: 700px) {
-  .hm-heart { --s: 50.5cqw; width: var(--s); left: 67.7cqw; top: 62cqw; right: auto; bottom: auto; }
-  .hm-cake { --s: 50.7cqw; width: var(--s); left: -16.2cqw; top: 100.1cqw; right: auto; bottom: auto; }
+  .hm-heart { --s: 50.5cqw; width: var(--s); left: 67.7cqw; top: calc(35.8% - .48 * var(--s)); right: auto; bottom: auto; }
+  .hm-cake { --s: 50.7cqw; width: var(--s); left: -16.2cqw; top: calc(56% - .57 * var(--s)); right: auto; bottom: auto; }
   .float.s-kb { --w: 65.1cqw; left: 50.7cqw; top: -85.3cqw; right: auto; bottom: auto; }
   .float.f-praktisk { --w: 49.6cqw; left: 5cqw; top: -113.7cqw; right: auto; bottom: auto; display: block; }
   .float.s-note { --w: 51.7cqw; left: 46.1cqw; top: -88.2cqw; right: auto; bottom: auto; }
@@ -301,8 +301,8 @@ body.modal-lock { overflow: hidden; }
   .float.f-faq { display: none; }
   #program { margin-top: 95.3cqw; } #praktisk { margin-top: 127.4cqw; } #faq { margin-top: 112.8cqw; } #location { margin-top: 83.8cqw; }
   .float.s-sun { --w: 37.7cqw; left: 59.5cqw; top: -130.8cqw; right: auto; bottom: auto; }
-  .float.s-phone { --w: 42.7cqw; left: 70.8cqw; top: 26.4cqw; right: auto; bottom: auto; }
-  .float.f-end { --w: 49.6cqw; left: -14.7cqw; top: 166.4cqw; right: auto; bottom: auto; }
+  .float.s-phone { --w: 42.7cqw; left: 70.8cqw; top: calc(48.9% - 92.6cqw); right: auto; bottom: auto; }
+  .float.f-end { --w: 49.6cqw; left: -14.7cqw; top: calc(48.9% + 47.4cqw); right: auto; bottom: auto; }
 }
 
 /* load-in: letters and words rise into place */
