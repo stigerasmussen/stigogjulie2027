@@ -291,18 +291,26 @@ body.modal-lock { overflow: hidden; }
 }
 /* mobile disco placement, taken from the Figma mobile frame (Mobil – Kærlighedsfest (402)) */
 @media (max-width: 700px) {
-  .hm-heart { --s: 50.5cqw; width: var(--s); left: 67.7cqw; top: calc(35.8% - .48 * var(--s)); right: auto; bottom: auto; }
-  .hm-cake { --s: 50.7cqw; width: var(--s); left: -16.2cqw; top: calc(56% - .57 * var(--s)); right: auto; bottom: auto; }
-  .float.s-kb { --w: 65.1cqw; left: 50.7cqw; top: -85.3cqw; right: auto; bottom: auto; }
-  .float.f-praktisk { --w: 49.6cqw; left: 5cqw; top: -113.7cqw; right: auto; bottom: auto; display: block; }
-  .float.s-note { --w: 51.7cqw; left: 46.1cqw; top: -88.2cqw; right: auto; bottom: auto; }
-  .float.f-su { --w: 46.2cqw; left: 10.8cqw; top: -78.4cqw; right: auto; bottom: auto; }
-  .float.s-toast { --w: 43.5cqw; left: 54.9cqw; top: -41.5cqw; right: auto; bottom: auto; }
+  .hero-m { min-height: calc(100svh - 64px); padding-top: 4px; }
+  .hm-names, .hm-date { font-size: 24.1cqw; }
+  .hm-title { font-size: max(4cqw, min(9.3cqw, calc((100svh - 196px - 96.4cqw) / 9.6))); }
+  .hm-heart { --s: 70.4cqw; width: var(--s); left: 57.6cqw; top: calc(39.2% - .48 * var(--s)); right: auto; bottom: auto; }
+  .hm-cake { --s: 70.4cqw; width: var(--s); left: -24.2cqw; top: calc(53.6% - .57 * var(--s)); right: auto; bottom: auto; }
+  .float.s-kb { --w: 90.3cqw; left: 37.6cqw; top: -98.2cqw; right: auto; bottom: auto; }
+  .float.f-praktisk { --w: 68.9cqw; left: -4.4cqw; top: -108.5cqw; right: auto; bottom: auto; display: block; }
+  .float.s-note { --w: 71.9cqw; left: 36.8cqw; top: -83.3cqw; right: auto; bottom: auto; }
+  .float.f-su { --w: 64.1cqw; left: 2.3cqw; top: -120.1cqw; right: auto; bottom: auto; }
+  .float.s-toast { --w: 60.5cqw; left: 46.9cqw; top: -66cqw; right: auto; bottom: auto; }
   .float.f-faq { display: none; }
-  #program { margin-top: 95.3cqw; } #praktisk { margin-top: 127.4cqw; } #faq { margin-top: 112.8cqw; } #location { margin-top: 83.8cqw; }
-  .float.s-sun { --w: 37.7cqw; left: 59.5cqw; top: -130.8cqw; right: auto; bottom: auto; }
-  .float.s-phone { --w: 42.7cqw; left: 70.8cqw; top: calc(48.9% - 92.6cqw); right: auto; bottom: auto; }
-  .float.f-end { --w: 49.6cqw; left: -14.7cqw; top: calc(48.9% + 47.4cqw); right: auto; bottom: auto; }
+  /* type and heading spacing from Figma */
+  .intro { font-size: 26px; line-height: 1.3; }
+  #program, #praktisk, #faq, #location, .kom-glad .stack { font-size: 17px; line-height: 1.42; }
+  #h-program, #h-location { font-size: 17.8cqw; } #h-praktisk, #h-faq { font-size: 19.2cqw; } .kom-glad h2 { font-size: 16.4cqw; margin-bottom: 22px; }
+  #program .sec-head { margin-bottom: 42px; } #praktisk .sec-head { margin-bottom: 62px; } #faq .sec-head { margin-bottom: 33px; } #location .sec-head { margin-bottom: 30px; }
+  #program { margin-top: 95.3cqw; } #praktisk { margin-top: 135.2cqw; } #faq { margin-top: 145.7cqw; } #location { margin-top: 72.6cqw; }
+  .float.s-sun { --w: 52.3cqw; left: 52.8cqw; top: -151.8cqw; right: auto; bottom: auto; }
+  .float.s-phone { --w: 59.3cqw; left: 62.7cqw; top: calc(48.9% - 100.9cqw); right: auto; bottom: auto; }
+  .float.f-end { --w: 68.9cqw; left: -25cqw; top: calc(48.9% + 38.1cqw); right: auto; bottom: auto; }
 }
 
 /* load-in: letters and words rise into place */
