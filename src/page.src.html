@@ -289,6 +289,21 @@ body.modal-lock { overflow: hidden; }
   .float.s-phone { left: auto; right: -8cqw; top: 2cqw; bottom: auto; }
   .float.f-end { left: -10cqw; top: auto; bottom: 4cqw; }
 }
+/* mobile disco placement, taken from the Figma mobile frame (Mobil – Kærlighedsfest (402)) */
+@media (max-width: 700px) {
+  .hm-heart { --s: 50.5cqw; width: var(--s); left: 67.7cqw; top: 62cqw; right: auto; bottom: auto; }
+  .hm-cake { --s: 50.7cqw; width: var(--s); left: -16.2cqw; top: 100.1cqw; right: auto; bottom: auto; }
+  .float.s-kb { --w: 65.1cqw; left: 50.7cqw; top: -85.3cqw; right: auto; bottom: auto; }
+  .float.f-praktisk { --w: 49.6cqw; left: 5cqw; top: -113.7cqw; right: auto; bottom: auto; display: block; }
+  .float.s-note { --w: 51.7cqw; left: 46.1cqw; top: -88.2cqw; right: auto; bottom: auto; }
+  .float.f-su { --w: 46.2cqw; left: 10.8cqw; top: -78.4cqw; right: auto; bottom: auto; }
+  .float.s-toast { --w: 43.5cqw; left: 54.9cqw; top: -41.5cqw; right: auto; bottom: auto; }
+  .float.f-faq { display: none; }
+  #program { margin-top: 95.3cqw; } #praktisk { margin-top: 127.4cqw; } #faq { margin-top: 112.8cqw; } #location { margin-top: 83.8cqw; }
+  .float.s-sun { --w: 37.7cqw; left: 59.5cqw; top: -130.8cqw; right: auto; bottom: auto; }
+  .float.s-phone { --w: 42.7cqw; left: 70.8cqw; top: 26.4cqw; right: auto; bottom: auto; }
+  .float.f-end { --w: 49.6cqw; left: -14.7cqw; top: 166.4cqw; right: auto; bottom: auto; }
+}
 
 /* load-in: letters and words rise into place */
 @keyframes rise { from { translate: 0 .14em; opacity: 0; } to { translate: 0 0; opacity: 1; } }
@@ -345,8 +360,8 @@ body.modal-lock { overflow: hidden; }
     </div>
     <div class="row big names"><span>STIG</span><span class="amp">&amp;</span><span>JULIE</span><div class="heart-slot mob"><canvas data-disco="heart" data-tile="0.06" data-spin="rock" data-amp="0.45" data-rz="0.3" data-tilt="0.05" aria-hidden="true"></canvas><span class="hint" aria-hidden="true">træk og spin mig</span></div></div>
     <div class="intro">
-      <p>Vi skal ikke vies. Men vi elsker hinanden. Og dét drømmer vi om at fejre med alle jer, vi holder af. Så forestil dig en bryllupsfest. Men uden hvid kjole og hvide duge. Men med dejlig mad, gode mennesker og en masse moves på floor. Simple as that.</p>
-      <p>Vi glæder os helt vildt og håber, I har lyst til at komme og gøre dagen til en, vi aldrig glemmer.</p>
+      <p>Vi skal ikke vies. Men vi elsker hinanden. Og dét drømmer vi om at fejre med alle jer vi holder af. Så forestil dig en bryllupsfest. Men uden hvid kjole og hvide duge. Men med dejlig mad, gode mennesker og en masse moves på floor. Simple as that.</p>
+      <p>Vi glæder os helt vildt og håber, I har lyst til at komme og gøre dagen til en vi aldrig glemmer.</p>
     </div>
   </header>
   <script>
@@ -365,39 +380,39 @@ body.modal-lock { overflow: hidden; }
     <div class="sec-head"><h2 id="h-program">PROGRAM</h2></div>
 
     <div class="grid3 prog">
-      <div class="c1"><strong>12:00 – 14:00</strong><br>Crossfit workout<br>(optionel)</div>
+      <div class="c1"><strong>12:00 – 14.00</strong><br>Crossfit workout<br>(frivilligt)</div>
       <div class="c2 stack">
-        <div><h3>Hvad skal der ske</h3><p>Vi starter dagen, hvor det hele startede: Aarhus Crossfit. Her mødes I, der har lyst til en workout, som vi står for. Vi sørger for, at alle kan være med. Alt du skal medbringe er træningstøj, drikkedunk og godt humør.</p></div>
+        <div><h3>Hvad skal der ske</h3><p>Vi starter dagen, hvor det hele startede: Aarhus Crossfit. Her mødes jer, der har lyst til en workout som vi står for. Vi sørger for, at alle kan være med. Alt du skal medbringe er træningstøj, drikkedunk og godt humør.</p></div>
         <p>Når vi er færdige med at svede og lide, serverer vi lidt tørt og vådt til ganen, så vi har lagt en lille bund til aftenen.</p>
       </div>
       <div class="c3"><p><strong>Hvor</strong><br>Aarhus Crossfit<br>Balticagade 8<br>8000 Aarhus C<br>Betalingsparkering mulig</p><button type="button" class="pill js-map" aria-haspopup="dialog" aria-controls="map-crossfit">Se kort</button></div>
     </div>
     <hr>
     <div class="grid3 prog">
-      <div class="c1"><strong>14:00 – 17:00</strong><br>Solotid (optionel)</div>
-      <div class="c2"><h3>Hvad skal der ske</h3><p>Efter crossfit vil der være tid til at gå i bad og gøre klar til fest.</p></div>
+      <div class="c1"><strong>14.00 – 17:00</strong><br>Solotid</div>
+      <div class="c2"><h3>Hvad skal der ske</h3><p>Efter crossfit vil der være tid til bad og gøre klar til fest.</p></div>
       <div class="c3"><p><strong>Hvor</strong><br>Intet sted arrangeret</p></div>
     </div>
     <hr>
     <div class="grid3 prog long">
       <div class="c1"><strong>17:00 – 02:00</strong><br>Middag og fest!</div>
-      <div class="c2"><h3>Hvad skal der ske</h3><p>Her starter den ægte fest. Har du ikke været med til crossfit inden, er det her, du støder til i dit lækreste, stiveste puds.</p></div>
+      <div class="c2"><h3>Hvad skal der ske</h3><p>Her starter den ægte fest. Har du ikke været med til crossfit inden, er det her du støder til i dit lækreste, stiveste puds.</p></div>
       <div class="c3"><p><strong>Hvor</strong><br>Salling Rooftop<br>Lokale: Væksthuset<br>Søndergade 27<br>8000 Aarhus C<br>Betalingsparkering mulig</p><button type="button" class="pill js-map" aria-haspopup="dialog" aria-controls="map-salling">Se kort</button></div>
 
       <div class="c1 sub"><strong>17:00</strong><br>Velkomstbobler og haps</div>
       <div class="c2"><p>Først vil der være en tår bobler, lidt snacks og praktisk information om aftenen.</p></div>
 
       <div class="c1 sub"><strong>17:45</strong><br>Middag og indslag</div>
-      <div class="c2 stack"><p>Derefter sætter vi os og får noget dejlig mad. Der vil blive serveret tre retter med vin, øl, limonade, sodavand og vand ad lib, mums. Imens vender DJ KRZR plader.</p><p>Her vil der også være plads til indslag, weee.</p></div>
+      <div class="c2 stack"><p>Derefter sætter vi os og får noget dejlig mad. Der vil blive serveret tre retter med vin, øl, limonade, sodavand og vand ad lib, mums.</p><p>Her vil der også være plads til indslag, weee.</p></div>
 
       <div class="c1 sub"><strong>23:00</strong><br>Dans, dans, dans!</div>
-      <div class="c2"><p>SÅ skal vi på floor!<br>Hver halve time vil et nyt DJ-hold træde på banen og sætte tonen for vores moves.</p></div>
+      <div class="c2"><p>SÅ skal vi på floor!<br>Hver halve time vil et nyt DJ hold træde på banen og sætte tonen for vores moves.</p></div>
 
       <div class="c1 sub"><strong>01:00</strong><br>Natmad</div>
       <div class="c2"><p>Så’ der’ tooooast!</p></div>
 
       <div class="c1 sub"><strong>02:00</strong><br>Vi skal ikke hjem, vi skal...</div>
-      <div class="c2"><p>Videre! Vi blir nemlig smidt ud på røv og albuer fra Salling Rooftop. Hvis stemningen er til det, fortsætter festen i byen.</p></div>
+      <div class="c2"><p>Videre! Vi blir nemlig smidt ud på røv og albuer fra Salling Rooftop. Hvis stemningen er til det fortsætter festen i byen.</p></div>
     </div>
   </section>
 
@@ -406,11 +421,11 @@ body.modal-lock { overflow: hidden; }
     <div class="float s-note"><canvas data-disco="note" data-spin="rock" data-rz="-0.18" aria-hidden="true"></canvas></div>
     <div class="sec-head"><h2 id="h-praktisk">PRAKTISK</h2></div>
     <div class="facts">
-      <div class="grid3"><h3 class="c1">Dresscode</h3><p class="c2">Kom så hot som muligt. Alt er tilladt. Vi skal være indendøre det meste af aftenen, men da vi er på Salling Rooftop, har vi adgang til en stor, privat tagterrasse, så tag gerne en trøje eller jakke med til det.</p></div>
-      <div class="grid3"><h3 class="c1">Transport</h3><div class="c2 stack"><p>Festen afholdes 5 minutters gang fra Aarhus Banegård, hvis I er med toget.</p><p>Parkering er mulig ved Aarhus Crossfit og Salling Rooftop mod betaling.</p></div></div>
-      <div class="grid3"><h3 class="c1">Overnatning</h3><p class="c2">Det står I selv for. Der er masser af muligheder lige i nærheden af Salling.</p></div>
-      <div class="grid3"><h3 class="c1">Taler og indslag</h3><div class="c2 stack"><p>Vi vil elske nogle indslag, hvis nogen af jer sidder med noget på hjerte. For at sikre, at vi også har rigeligt tid til snak, hyg, mad og dans, ser vi gerne, at et indslag max varer ca. 5–10 minutter.</p><p>Kontakt vores vidunderlige toastmaster Emilie Blak. Hun kan være langsom til at svare, men frygt ikke, hun skal nok klare ærterne.</p><p>Fang hende på <a href="sms:+4530621679">30621679</a>.</p></div></div>
-      <div class="grid3"><h3 class="c1">Ønsker</h3><p class="c2">Vi ønsker os blot, at I kommer og gir’ den gas. Sådan ægte. Så please ikke kom med en ej-vi-burde-have-noget-med-gave. Den her slags fester koster rigeligt at deltage i, og det vigtigste for os er at samle alle jer, vi holder så meget af.</p></div>
+      <div class="grid3"><h3 class="c1">Dresscode</h3><p class="c2">Kom så hot som muligt. Alt er tilladt. Vi skal være indendøre det meste af aftenen, men da vi er på Salling Rooftop har vi adgang til en stor, privat tagtarasse, så tag gerne en trøje eller jakke med til det.</p></div>
+      <div class="grid3"><h3 class="c1">Transport</h3><div class="c2 stack"><p>Festen afholdes 5 minutters gang fra Aarhus Banegård, hvis I er med toget.</p><p>Parkering er mulig ved Århus Crossfit og Salling Rooftop mod betaling.</p></div></div>
+      <div class="grid3"><h3 class="c1">Overnatning</h3><p class="c2">Står gæster selv for. Der er en masse muligheder lige i nærheden fra Salling. Find et overblik her.</p></div>
+      <div class="grid3"><h3 class="c1">Taler og indslag</h3><div class="c2 stack"><p>Vi vil elske nogle indslag, hvis nogen af jer sidder med noget på hjerte. For at sikre, at vi også har rigeligt tid til snak, hyg, mad og dans, ser vi gerne, at et indslag max varer ca. 5-10 minutter.</p><p>Kontakt vores vidunderlige toastmaster Emilie Blak.<br>Fang hende på <a href="sms:+4530621679">30621679</a>.</p></div></div>
+      <div class="grid3"><h3 class="c1">Ønsker</h3><p class="c2">Vi ønsker os blot at I kommer og gir’ den gas. Sådan ægte. Så please ikke kom med en ej-vi-burde-have-noget-med-gave. Den her slags fester koster rigeligt at deltage i, og det vigtigste for os er at samle alle jer vi holder så meget af.</p></div>
       <div class="grid3" id="su"><h3 class="c1">S.U.</h3>
         <div class="c2 stack">
           <p>Senest d. 15. april 2027</p>
@@ -426,23 +441,23 @@ body.modal-lock { overflow: hidden; }
     <div class="sec-head"><h2 id="h-faq">FAQ</h2>
       
     </div>
-    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Jeg synes, det er weird ikke at komme med gave, hvad gør jeg, hvis jeg stadig vil komme med en?</h3><span class="c1 lab">Svar</span><p class="c2">Køb noget lækkert at ta’ på, en overnatning på hotel, der gør livet nemmere eller donér et beløb til en god sag.</p></div>
+    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Jeg synes det er weird ikke at komme med gave, hvad gør jeg, hvis jeg stadig vil komme med en?</h3><span class="c1 lab">Svar</span><p class="c2">Køb noget lækkert at ta’ på, en overnatning på hotel der gør livet nemmere eller donér et beløb til en god sag.</p></div>
     <hr>
-    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Jeg har aldrig lavet crossfit før. Kan jeg stadig være med?</h3><span class="c1 lab">Svar</span><p class="c2">Selvfølgelig! Vi lægger et program, hvor alle kan være med. Er det ikke lige dig, er du velkommen til at sidde og heppe eller støde til festen senere.</p></div>
+    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Jeg har aldrig lavet crossfit før. Kan jeg stadig være med?</h3><span class="c1 lab">Svar</span><p class="c2">Selvfølgelig! Vi ligger et program, hvor alle kan være med. Er det ikke lige dig er du velkommen til at sidde og heppe eller støde til festen senere.</p></div>
     <hr>
     <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Jeg har allergi / fødevarepræference / drikker ikke. Hvem kontakter jeg herom?</h3><span class="c1 lab">Svar</span><p class="c2">Vi tager selvfølgelig højde for det hele. Skriv til Julie på <a href="sms:+4525532772">25532772</a>, hvis du har særlige ønsker eller behov.</p></div>
     <hr>
     <div class="line-anchor"><div class="float f-faq"><canvas data-disco="cake" data-spin="rock" data-amp="0.6" data-tilt="0.22" data-rz="-0.12" aria-hidden="true"></canvas></div></div>
-    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Er børn inviteret?</h3><span class="c1 lab">Svar</span><p class="c2">Nope. Men hvis de er bittesmå og bliver ammet, tager I dem selvfølgelig med. Skriv, hvis vi skal spørge efter en højstol.</p></div>
+    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Er børn inviteret?</h3><span class="c1 lab">Svar</span><p class="c2">Nope. Men hvis de er bittesmå og bliver ammet tager I dem selvfølgelig med. Skriv hvis vi skal spørge efter en højstol.</p></div>
     <hr>
-    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Nu hvor det ikke er et bryllup, må jeg så gerne have hvid på som gæst?</h3><span class="c1 lab">Svar</span><p class="c2">Intet problem. Så længe du føler dig godt tilpas og har gjort dig lækker, er vi glade.</p></div>
+    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Nu hvor det ikke er et bryllup, må jeg så gerne have hvid på som gæst?</h3><span class="c1 lab">Svar</span><p class="c2">Ingen problem. Så længe du føler dig godt tilpas og har gjort dig lækker, er vi glade.</p></div>
     <hr>
-    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Skal der klippes sokker, danses vals, og vil der være en form for vielse?</h3><span class="c1 lab">Svar</span><p class="c2">Nej, nej og nej :)</p></div>
+    <div class="grid3 qa"><span class="c1 lab label-q">Spørgsmål</span><h3 class="c2 q" style="font-weight:400;font-stretch:112%">Skal der klippes sokker, danses vals og vil der være en form for vielse?</h3><span class="c1 lab">Svar</span><p class="c2">Nej, nej og nej :)</p></div>
   </section>
 
   <section class="sec" id="location" aria-labelledby="h-location">
     <div class="sec-head"><h2 id="h-location">LOCATION</h2></div>
-    <p class="loc-text">Vi skal være i Væksthuset på Salling Rooftop. Det er et privat lokale, der ligger uforstyrret fra de øvrige gæster på Rooftop. Vi har et større lokale og en privat tagterrasse. Der er markiser og varmelamper på terrassen, men tag gerne en trøje med til aftenen.</p>
+    <p class="loc-text">Vi skal være i Væksthuset på Salling Rooftop, der er et privat lokale, der ligger uforstyrret fra de øvrige gæster på Rooftop. Vi har et større lokale samt privat tagterrasse. Der er markiser og varmelamper på terrassen, men tag gerne en trøje med til aftenen.</p>
     <div class="gal-wrap"><div class="float s-sun"><canvas data-disco="sun" data-spin="z" aria-hidden="true"></canvas></div>
     <div class="gallery" tabindex="0" aria-label="Billeder fra Salling Rooftop">
       <img class="g1" src="__IMG1__" alt="Væksthuset med lange borde, grønne planter og hængende pærer">
@@ -459,7 +474,7 @@ body.modal-lock { overflow: hidden; }
     <div class="float f-end"><canvas data-disco="heart" data-color="red" data-spin="rock" data-rot="0.05" data-rz="-0.3" data-amp="0.4" data-tilt="0.08" aria-hidden="true"></canvas></div>
     <h2 id="h-komglad">KOM GLAD</h2>
     <div class="stack">
-      <p>Igen: Skriv til os senest d. 15. april 2027.</p>
+      <p>Igen; skriv til os senest d. 15. april 2027.</p>
       <p>Til Julie på <a href="sms:+4525532772">25532772</a><br>Til Stig på <a href="sms:+4541603816">41603816</a></p>
       <p>Vi glæder os helt vildt til at ha’ en skøn dag med jer!</p>
     </div>
