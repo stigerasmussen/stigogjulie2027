@@ -615,10 +615,12 @@ body.modal-lock { overflow: hidden; }
         </g>
       </g>
     </svg>
-    <svg class="map-m" viewBox="0 0 400 720" role="img" aria-label="Kort: Find vej til Væksthuset på Salling Rooftop via elevatortårnet ved Sallings P-hus">
+    <svg class="map-m" viewBox="0 0 400 756" role="img" aria-label="Kort: Find vej til Væksthuset på Salling Rooftop via elevatortårnet ved Sallings P-hus">
       <g font-family="'Mona Sans', 'Helvetica Neue', Arial, sans-serif" style="font-stretch:112%">
         <text x="200" y="58" text-anchor="middle" font-family="'Kapakana', cursive" font-weight="300" font-size="34" style="fill:var(--red);font-stretch:normal">Find vej til</text>
-        <text x="200" y="106" text-anchor="middle" font-size="34" style="fill:var(--ink)">SALLING ROOFTOP</text>
+        <text x="200" y="106" text-anchor="middle" font-size="34" style="fill:var(--ink)"><tspan x="200">SALLING</tspan><tspan x="200" dy="36">ROOFTOP</tspan></text>
+        <!-- everything below moves down by the extra title line -->
+        <g transform="translate(0 36)">
         <rect x="20" y="150" width="20" height="320" style="fill:var(--grey)"/>
         <rect x="20" y="308" width="370" height="32" style="fill:var(--grey)"/>
         <rect x="204" y="150" width="20" height="158" style="fill:var(--grey)"/>
@@ -657,6 +659,7 @@ body.modal-lock { overflow: hidden; }
             <tspan x="20" dy="22">har gået over den, står du nærmest i</tspan>
             <tspan x="20" dy="22">Væksthuset, som ligger lige til højre.</tspan>
           </text>
+        </g>
         </g>
       </g>
     </svg>
